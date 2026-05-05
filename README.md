@@ -62,7 +62,7 @@ The EcoTrack system consists of three layers:
 * ML Model (ARIMA in Python)
 * Dashboard (Streamlit + FastAPI)
 
-## 🔄 Workflow
+## Workflow
 Sensors → Arduino → Bluetooth → Mobile App → ML Model → Dashboard
 
 ## Technologies Used
