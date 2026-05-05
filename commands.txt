@@ -1,0 +1,39 @@
+> Create venv (once):
+
+python -m venv venv
+
+
+>Activate venv (every time you open a new terminal):
+
+.\venv\Scripts\activate.bat( windows command prompt)
+.\venv\Scripts\Activate.ps1 (vs code powershell)
+
+
+To actiavate virtual environment automatically whenever we opened the this folder
+ctrl+shift+p -> python:selected interpreter -> select the recommended interpreter
+
+
+>Install libraries (once per project, inside venv):
+
+pip install fastapi uvicorn streamlit pandas statsmodels matplotlib scikit-learn
+pip install pmdarima
+
+NumPy version: 1.26.0
+pmdarima version: 2.0.4  ->if python version 3.12
+
+
+Use your venv → run FastAPI / Streamlit
+
+Close terminal → activation ends
+
+Open terminal → reactivate venv → all installed libraries still there
+
+>to run main_api.py 
+uvicorn main_api:app --reload
+or
+python -m uvicorn main_api:app --reload
+
+>to run streamlit 
+streamlit run app_streamlit.py
+
+make sure api is running in one terminal, open another terminal activate venv and then run streamlit
